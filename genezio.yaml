@@ -13,6 +13,6 @@ backend:
             - npm install
         local:
             - npm install
-name: mmofa
+name: newmfa
 region: us-east-1
 yamlVersion: 2
