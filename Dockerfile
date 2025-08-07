@@ -2,7 +2,7 @@
 FROM node:18-alpine
 
 # Specify working directory
-WORKDIR /SriLanka8ss833
+WORKDIR /Iiannxihw7shadbG
 
 # Copy package.json 
 COPY package.json ./
